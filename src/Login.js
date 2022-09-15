@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {nftVideo} from 'assets/video.mp4'
+import nftVideo from './assets/video.mp4'
 import './Login.css';
 import {Link, useHistory} from "react-router-dom";
 import {auth} from './firebase';
