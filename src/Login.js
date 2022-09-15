@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
+import {nftVideo} from 'assets/video.mp4'
 import './Login.css';
 import {Link, useHistory} from "react-router-dom";
 import {auth} from './firebase';
+
 
 function Login() {
     const history = useHistory();
@@ -52,7 +54,10 @@ function Login() {
                 </p>
                             
                 <button type = 'submit' onClick={regist} className='login_registerButton'>Create your Amazon account</button>
-                
+                    <video width={500} height={500} autoPlay loop muted controls controlsList='nodownload' playsInline preload="metadata">
+                      <source src={nftVideo} type="video/mp4"/>
+                      <track src="captions_en.vtt" kind="captions" srcLang="en" label="english_captions"/>
+                  </video>
             </div>
         </div>
     )
